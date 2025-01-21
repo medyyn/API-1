@@ -1,0 +1,108 @@
+@font-face {
+    font-family: Inter;
+    src: url(../font/Inter_18pt-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: Inter;
+}
+
+header {
+    background-color: #d6d6d6;
+    padding: 20px 30px 20px 30px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ul > a {
+    color: black;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+ul {
+    display: flex;
+    gap: 25px;
+}
+
+.logo {
+    font-size: 30px;
+    color: #000000;
+}
+
+.cards {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 40px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 40px;
+}
+
+.card {
+    cursor: pointer;
+    width: 435px;
+    padding: 30px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background-color: #fff;
+    transition: box-shadow 0.3s ease;
+    transition: transform 0.2s ease;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.card h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    font-size: 20px;
+    color: #2c2b2b;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.card:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transform: scale(1.05);
+}
+
+#mode-toggle-icon {
+    font-size: 2rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+#mode-toggle-icon:hover {
+    transform: scale(1.2);
+}
+
+body.dark-mode {
+    transition: ease-in-out 0.5s;
+    background-color: #121212;
+    color: #ffffff;
+}
